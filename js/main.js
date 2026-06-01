@@ -27,7 +27,7 @@ $(function(){
     });
 
     $('.filter-style').styler();
-    $('.filter__item-drop').on("click", function(){
+    $('.filter__item-drop, .filter__extra').on("click", function(){
         $(this).toggleClass('filter__item-drop--active');
         $(this).next().slideToggle("200");
     });
@@ -38,6 +38,22 @@ $(function(){
         max: 500000,
     });
 
+    $('.catalog__filter-btngrid').on("click", function(){
+        $(this).addClass("catalog__filter-button--active");
+        $('.catalog__filter-btnline').removeClass("catalog__filter-button--active");
+        $(".product-item__wrapper").removeClass("product-item__wrapper--list");
+    });
 
+    $('.catalog__filter-btnline').on("click", function(){
+        $(this).addClass("catalog__filter-button--active");
+        $('.catalog__filter-btngrid').removeClass("catalog__filter-button--active");
+        $(".product-item__wrapper").addClass("product-item__wrapper--list");
+    });
+
+    $(".rate-yo").rateYo({
+        ratedFill: "#1C62CD",
+        spacing: "7px",
+        normalFill: "#C4C4C4"
+    });
 
 });
