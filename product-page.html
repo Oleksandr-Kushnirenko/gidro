@@ -23,6 +23,12 @@
     <div class="container">
       <div class="header__top-inner">
         <nav class="menu">
+          <button class="menu_btn">
+            <div class="menu_btn-line"></div>
+            <div class="menu_btn-line"></div>
+            <div class="menu_btn-line"></div>
+
+          </button>
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#">Магазини</a>
@@ -62,6 +68,109 @@
       </div>
     </div>
   </div>
+
+  <ul class="menu-mobile__list">
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/user-icon.svg" alt="user">
+        <p>Увійти</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/user-icon.svg" alt="user">
+        <p>Реєстрація</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/heart-icon.svg" alt="heart">
+        <p>Вибране</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/basket.svg" alt="basket">
+        <p>Кошик</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/house.svg" alt="house">
+        <p>Магазини</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/procent.svg" alt="procent">
+        <p>Акції</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" src="images/box.svg" alt="box">
+        <p>Доставка і оплата</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <img class="menu-mobile__img" alt="">
+        <p>Квадроцикли</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Катери</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Гідроцикли</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Човни</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Всюдиходи</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Снігоходи</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Двигуни</p>
+      </a>
+    </li>
+    <li class="menu-mobile__item">
+      <a class="menu-mobile__link" href="#">
+        <p>Запчастини</p>
+      </a>
+    </li>
+  </ul>
+
+  <div class="menu__mobile-linewrapper">
+    <ul class="menu__mobile-line">
+      <li class="menu__item">
+        <a class="menu__link" href="#">Магазини</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Акції</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">Доставка і оплата</a>
+      </li>
+    </ul>
+  </div>
+
+
+
   <div class="header__bottom">
     <div class="container">
       <ul class="menu-categories">
@@ -96,17 +205,16 @@
 
 <div class="breadcrumbs">
   <div class="container">
-    <uk class="breadcrumbs__list">
-      <li class="breadcrumbs__list-item">
-        <a href="#">Головна</a>
-      </li>
-      <li class="breadcrumbs__list-item">
-        <a href="#">Гідроцикли</a>
-      </li>
-      <li class="breadcrumbs__list-item">
-        <span>Гідроцикли BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
-      </li>
-    </uk>
+    <div class="breadcrumbs__inner">
+      <ul class="breadcrumbs__list mobile-overflow">
+        <li class="breadcrumbs__list-item">
+          <a href="#">Головна</a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <span>Гідроцикли</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -658,11 +766,11 @@
             </h6>
             <form class="footer-form">
               <input class="footer-form__input" type="text" placeholder="Введіть ваш e-mail:">
-              <button class="footer-form" btn type="submit">Надіслати</button>
+              <button class="footer-form__btn" type="submit">Надіслати</button>
             </form>
           </div>
-          <div class="footer__top-item">
-            <h6 class="footer__top-title">
+          <div class="footer__top-item footer__top-itemdrop">
+            <h6 class="footer__top-title footer__topdrop">
               Інформація
             </h6>
             <ul class="footer-list">
@@ -673,7 +781,7 @@
             </ul>
           </div>
           <div class="footer__top-item">
-            <h6 class="footer__top-title">
+            <h6 class="footer__top-title footer__topdrop">
               Інтернет-магазин
             </h6>
             <ul class="footer-list">
