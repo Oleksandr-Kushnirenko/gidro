@@ -231,6 +231,9 @@
           1 100 475 ₴
         </p>
         <a class="product-card__link" href="#">Знайшли дешевше? Зменшимо ціну!</a>
+        <div class="product-card__btn product-card__btn-mobile">
+          <button>Купити</button>
+        </div>
       </div>
       <div class="product-card__content">
         <h1 class="product-card__title">
@@ -304,7 +307,7 @@
 <section class="card__tabs">
   <div class="container">
     <div class="tabs-wraper">
-      <div class="tabs card__tab-box">
+      <div class="tabs card__tab-box mobile-overflow">
         <a class="tab card__tab" href="#product-card__tabs-1">Про товар</a>
         <a class="tab card__tab" href="#product-card__tabs-2">Характеристики</a>
         <a class="tab card__tab" href="#product-card__tabs-3">Відзиви</a>
@@ -313,6 +316,7 @@
         <a class="tab card__tab" href="#product-card__tabs-6">Сервіс</a>
         <a class="tab card__tab" href="#product-card__tabs-7">Гарантія</a>
       </div>
+    </div>
       <div class="tabs-container">
         <div id="product-card__tabs-1" class="card__tab-content tabs-content">content</div>
         <div id="product-card__tabs-2" class="card__tab-content tabs-content">content</div>
@@ -419,7 +423,6 @@
         <div id="product-card__tabs-6" class="card__tab-content tabs-content">content</div>
         <div id="product-card__tabs-7" class="card__tab-content tabs-content">content</div>
       </div>
-</div>
   </div>
 </section>
 
@@ -431,75 +434,31 @@
       </h3>
 
       <div class="tabs-wrapper">
-        <div class="tabs popular__tabs">
-          <a class="tab products__tab" href="#popular-tab-1">запчастини</a>
+        <div class="tabs popular__tabs mobile-overflow">
+          <a class="tab products__tab tab--active" href="#popular-tab-1">запчастини</a>
           <a class="tab products__tab" href="#popular-tab-2">мотори</a>
           <a class="tab products__tab" href="#popular-tab-3">шини</a>
-          <a class="tab products__tab tab--active" href="#popular-tab-4">електроніка</a>
+          <a class="tab products__tab" href="#popular-tab-4">електроніка</a>
           <a class="tab products__tab" href="#popular-tab-5">інструменти</a>
           <a class="tab products__tab" href="#popular-tab-6">аксесуари</a>
         </div>
-        <div class="tabs-container products__container">
-          <div id="popular-tab-1" class="tabs-content products__content tabs-content--active">
-            <div class="product-slider">
-
-              <div class="product-slider__item">
-                <div class="product-item__wrapper product-item__not-available">
-                  <button class="product-item__favorite"></button>
-                  <button class="product-item__basket">
-                    <img src="images/basket-white.svg" alt="">
-                  </button>
-                  <a class="product-item__notify-link" href="#">
-                    <span>Повідомити про надходження</span>
-                  </a>
-                  <a class="product-item product-item--sale" href="#">
-                    <p class="product-item__hover-text product-item__hover-text-audio">переглянути товар</p>
-                    <div class="product-item__img-audio">
-                      <img class="product-item__img" src="images/content/product-2.png" alt="product-2">
-                    </div>
-                    <h4 class="product-item__title">BRP Audio-портативна система</h4>
-                    <p class="price product-item__price">9 800 ₴</p>
-                    <p class="product-item__notify-text">
-                      немає в наявності
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="product-slider__item">
-                <div class="product-item__wrapper">
-                  <button class="product-item__favorite"></button>
-                  <button class="product-item__basket">
-                    <img src="images/basket-white.svg" alt="">
-                  </button>
-                  <a class="product-item__notify-link" href="#">
-                    <span>Повідомити про надходження</span>
-                  </a>
+      </div>
+      <div class="tabs-container products__container">
+        <div id="popular-tab-1" class="tabs-content products__content tabs-content--active">
+          <div class="product-slider">
+            <div class="product-slider__item">
+              <div class="product-item__wrapper">
+                <button class="product-item__favorite"></button>
+                <button class="product-item__basket">
+                  <img src="images/basket-white.svg" alt="">
+                </button>
+                <a class="product-item__notify-link" href="#">
+                  <span>Повідомити про надходження</span>
+                </a>
                   <a class="product-item" href="#">
                     <p class="product-item__hover-text">переглянути товар</p>
-                    <img class="product-item__img" src="images/content/product-3.png" alt="product-3">
-                    <h4 class="product-item__title product-item__title-bottom">Garmin Echomap Plus 62cv</h4>
-                    <p class="price product-item__price">45 800 ₴</p>
-                    <p class="product-item__notify-text">
-                      немає в наявності
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div class="product-slider__item">
-                <div class="product-item__wrapper product-item__not-available">
-                  <button class="product-item__favorite"></button>
-                  <button class="product-item__basket">
-                    <img src="images/basket-white.svg" alt="">
-                  </button>
-                  <a class="product-item__notify-link" href="#">
-                    <span>Повідомити про надходження</span>
-                  </a>
-                  <a class="product-item product-item--sale" href="#">
-                    <p class="product-item__hover-text">переглянути товар</p>
-                    <img class="product-item__img" src="images/content/product-4.png" alt="product-">
-                    <h4 class="product-item__title product-item__title-key">RF D.E.S.S.TM Key</h4>
+                    <img class="product-item__img" src="images/content/product-1.png" alt="product-1">
+                    <h4 class="product-item__title">Водонепроникний Рюкзак</h4>
                     <p class="price product-item__price">9 800 ₴</p>
                     <p class="product-item__notify-text">
                       немає в наявності
@@ -519,9 +478,51 @@
                   </a>
                   <a class="product-item product-item--sale" href="#">
                     <p class="product-item__hover-text">переглянути товар</p>
-                    <img class="product-item__img" src="images/content/product-5.png" alt="product-5">
-                    <h4 class="product-item__title">Чоловічий костюм <br> 3мм</h4>
-                    <p class="price product-item__price">7 000 ₴</p>
+                    <img class="product-item__img" src="images/content/product-1.png" alt="product-1">
+                    <h4 class="product-item__title">Водонепроникний Рюкзак</h4>
+                    <p class="price product-item__price">9 800 ₴</p>
+                    <p class="product-item__notify-text">
+                      немає в наявності
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-slider__item">
+                <div class="product-item__wrapper product-item__not-available">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a class="product-item__notify-link" href="#">
+                    <span>Повідомити про надходження</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">переглянути товар</p>
+                    <img class="product-item__img" src="images/content/product-1.png" alt="product-1">
+                    <h4 class="product-item__title">Водонепроникний Рюкзак</h4>
+                    <p class="price product-item__price">9 800 ₴</p>
+                    <p class="product-item__notify-text">
+                      немає в наявності
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="product-slider__item">
+                <div class="product-item__wrapper">
+                  <button class="product-item__favorite"></button>
+                  <button class="product-item__basket">
+                    <img src="images/basket-white.svg" alt="">
+                  </button>
+                  <a class="product-item__notify-link" href="#">
+                    <span>Повідомити про надходження</span>
+                  </a>
+                  <a class="product-item product-item--sale" href="#">
+                    <p class="product-item__hover-text">переглянути товар</p>
+                    <img class="product-item__img" src="images/content/product-1.png" alt="product-1">
+                    <h4 class="product-item__title">Водонепроникний Рюкзак</h4>
+                    <p class="price product-item__price">9 800 ₴</p>
                     <p class="product-item__notify-text">
                       немає в наявності
                     </p>
@@ -753,7 +754,6 @@
         </div>
       </div>
     </div>
-  </div>
 </section>
 
 <footer class="footer">

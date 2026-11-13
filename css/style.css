@@ -1634,3 +1634,7 @@ button.catalog__filter-btnline{
 .product-item__title-key {
    margin-top: 31px;
 }
+
+.product-card__btn-mobile{
+    display: none;
+}
